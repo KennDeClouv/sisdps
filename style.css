@@ -23,3 +23,16 @@
 .footer-top{
     background:url(img/footer.svg)
 }
+
+.wa{
+    position: fixed;
+    right:10px;
+    bottom:0;
+    z-index:10000;
+    width:60px;
+    height:110px;
+    transition: all 0.4 ease;
+}
+.wa:hover{
+    transform:scale(.96)
+}
