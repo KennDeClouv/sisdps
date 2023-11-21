@@ -2,37 +2,48 @@
     HERO BANNER
 -----------------------------------------------*/
 #home {
-    background: url(img/Hero.png) center no-repeat;
+	background: url(img/Hero.png) center no-repeat;
 }
 
 /* ----------------------------------------------
     TENTANG KAMI
 -----------------------------------------------*/
 .tentangkami {
-    width: 28em;
+	position: absolute;
+	width: 28em;
 	/* height: 523px; */
-	padding:3.5em 2.5em;
-    right:5%;
-    transform: translateY(30%)
+	padding: 3.5em 2.5em;
+	right: 5%;
+	transform: translateY(30%);
 }
 
+@media screen and (max-width: 992px) {
+    .tentangkami {
+        position: static;
+        transform: translateY(0);
+        width:100%;
+	}
+    .tentangimg{
+        width:100% !important;
+    }
+}
 
 /* ----------------------------------------------
     FOOTER
 -----------------------------------------------*/
-.footer-top{
-    background:url(img/footer.svg)
+.footer-top {
+	background: url(img/footer.svg);
 }
 
-.wa{
-    position: fixed;
-    right:10px;
-    bottom:0;
-    z-index:10000;
-    width:60px;
-    height:110px;
-    transition: all 0.4 ease;
+.wa {
+	position: fixed;
+	right: 10px;
+	bottom: 0;
+	z-index: 10000;
+	width: 60px;
+	height: 110px;
+	transition: all 0.4 ease;
 }
-.wa:hover{
-    transform:scale(.96)
+.wa:hover {
+	transform: scale(0.96);
 }
